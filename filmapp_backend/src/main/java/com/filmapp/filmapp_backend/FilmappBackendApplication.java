@@ -1,4 +1,3 @@
-// com.filmapp.filmapp_backend
 package com.filmapp.filmapp_backend;
 
 import org.springframework.boot.SpringApplication;
