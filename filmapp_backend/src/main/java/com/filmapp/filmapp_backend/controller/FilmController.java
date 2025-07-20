@@ -22,6 +22,11 @@ public class FilmController {
         return filmRepository.findAll();
     }
 
+    @GetMapping("/{imdbId}")
+    public Film getFilmByImdbId(@PathVariable String imdbId) {
+        return filmRepository.findByImdbId(imdbId);
+    }
+
     @PostMapping
     public Film addFilm(@RequestBody Film film) {
         return filmRepository.save(film);
